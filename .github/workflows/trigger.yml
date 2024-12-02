@@ -36,6 +36,9 @@ jobs:
         
       - name: Build and Push Docker Image
         run: |
+          if [ -d "${{ github.event.client_payload.version }}" ]; then
+            rm -rf "${{ github.event.client_payload.version }}"
+          fi
           mkdir ${{ github.event.client_payload.version }}
           ./update.sh
           git add .
