@@ -37,11 +37,12 @@ jobs:
       - name: Build and Push Docker Image
         run: |
           if [ -d "${{ github.event.client_payload.version }}" ]; then
-            rm -rf "${{ github.event.client_payload.version }}"
+            echo "${{ github.event.client_payload.version }} already exists."
+          else
+            mkdir ${{ github.event.client_payload.version }}
+            ./update.sh
+            git add .
+            git commit -s -m "Update to ${{ github.event.client_payload.version }}"
+            git push
           fi
-          mkdir ${{ github.event.client_payload.version }}
-          ./update.sh
-          git add .
-          git commit -s -m "Update to ${{ github.event.client_payload.version }}"
-          git push
           
