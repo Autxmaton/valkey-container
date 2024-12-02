@@ -9,13 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up bashbrew
-        run: |
-          git clone https://github.com/docker-library/bashbrew.git
-          cd bashbrew
-          ./bashbrew.sh
-          cd bin
-          export PATH="$PWD:PATH"
-          cd ../../
+        uses: docker-library/bashbrew@v0.1.12
       
       - name: Check if bashbrew in installed
         run: |
