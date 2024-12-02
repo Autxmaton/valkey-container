@@ -23,7 +23,7 @@ jobs:
       - name: Validate Payload
         run: |
           VERSION="${{ github.event.client_payload.version }}"
-          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+          if ! [[ "$VERSION" =~ ^([0-9]+\.[0-9]+\.[0-9]+|unstable)$ ]]; then
             echo "Invalid version format. Expected format: x.y.z"
             exit 1
           fi
