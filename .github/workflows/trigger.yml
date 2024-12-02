@@ -8,6 +8,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Validate Payload
+        run: |
+          VERSION="${{ github.event.client_payload.version }}"
+          if ! [[ "$VERSION" =~ ^([0-9]+\.[0-9]+\.[0-9]+|unstable)$ ]]; then
+            echo "Invalid version format. Expected format: x.y.z"
+            exit 1
+          fi
+
       - name: Set up bashbrew
         uses: docker-library/bashbrew@v0.1.12
       
@@ -20,16 +28,17 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
       
-      - name: Validate Payload
-        run: |
-          VERSION="${{ github.event.client_payload.version }}"
-          if ! [[ "$VERSION" =~ ^([0-9]+\.[0-9]+\.[0-9]+|unstable)$ ]]; then
-            echo "Invalid version format. Expected format: x.y.z"
-            exit 1
-          fi
       
-      - name: Create new version
+      - name: Configure Git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+        
+      - name: Build and Push Docker Image
+        run: |
+          mkdir ${{ github.event.client_payload.version }}
+          ./update.sh
+          git add .
+          git commit -s -m "Update to ${{ github.event.client_payload.version }}"
+          git push
           
