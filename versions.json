@@ -7,7 +7,7 @@
       "version": "bookworm"
     },
     "alpine": {
-      "version": "3.20"
+      "version": "3.21"
     }
   },
   "8.0": {
@@ -18,7 +18,18 @@
       "version": "bookworm"
     },
     "alpine": {
-      "version": "3.20"
+      "version": "3.21"
+    }
+  },
+  "unstable": {
+    "version": "unstable",
+    "url": "https://github.com/valkey-io/valkey/archive/unstable.tar.gz",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "debian": {
+      "version": "bookworm"
+    },
+    "alpine": {
+      "version": "3.21"
     }
   }
 }
