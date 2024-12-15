@@ -1,1 +1,13 @@
-
+{
+  "1.0": {
+    "version": "1.0.6",
+    "url": "https://github.com/Autxmaton/valkey/archive/refs/tags/1.0.6.tar.gz",
+    "sha256": "09e81a4c6c31e388df7697f61b4d524dca79bc69025b75bce8ff5f5ed52f43e1",
+    "debian": {
+      "version": "bookworm"
+    },
+    "alpine": {
+      "version": "3.21"
+    }
+  }
+}
