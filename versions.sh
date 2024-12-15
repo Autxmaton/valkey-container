@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# Default branch is 'main' unless specified as the first argument or environment variable
-branch="${1:-${BRANCH:-main}}"
+branch="${1:-main}"
+shift
 
 alpine="$(
 	bashbrew cat --format '{{ .TagEntry.Tags | join "\n" }}' https://github.com/docker-library/official-images/raw/HEAD/library/alpine:latest \
@@ -31,7 +31,7 @@ fi
 versions=( "${versions[@]%/}" )
 
 packages="$(
-	wget -qO- 'https://github.com/Autxmaton/valkey-hashes/raw/${branch}/README' \
+	wget -qO- "https://github.com/Autxmaton/valkey-hashes/raw/${branch}/README" \
 	| jq -csR '
 		rtrimstr("\n")
 		| split("\n")
