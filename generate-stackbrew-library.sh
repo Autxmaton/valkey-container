@@ -56,10 +56,10 @@ getArches() {
 getArches 'valkey'
 
 cat <<-EOH
-# this file is generated via https://github.com/valkey-io/valkey-container/blob/$(fileCommit "$self")/$self
+# this file is generated via https://github.com/Autxmaton/valkey-container/blob/$(fileCommit "$self")/$self
 
 Maintainers: Roshan Khatri <rvkhatri@amazon.com> (@roshkhatri)
-GitRepo: https://github.com/valkey-io/valkey-container.git
+GitRepo: https://github.com/Autxmaton/valkey-container.git
 EOH
 
 # prints "$2$1$3$1...$N"
