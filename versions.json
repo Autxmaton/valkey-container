@@ -31,5 +31,16 @@
     "alpine": {
       "version": "3.21"
     }
+  },
+  "4.0": {
+    "version": "4.0.0",
+    "url": "https://github.com/Autxmaton/valkey/archive/refs/tags/4.0.0.tar.gz",
+    "sha256": "d6e38df2d2a36125b710425e6d99beea6268503083be7d7bc8061cadf1493f29",
+    "debian": {
+      "version": "bookworm"
+    },
+    "alpine": {
+      "version": "3.21"
+    }
   }
 }
