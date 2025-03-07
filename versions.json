@@ -53,5 +53,16 @@
     "alpine": {
       "version": "3.21"
     }
+  },
+  "unstable": {
+    "version": "unstable",
+    "url": "https://github.com/Autxmaton/valkey/archive/refs/tags/unstable.tar.gz",
+    "sha256": "e13fd61dbeda89adba849167cdf05ea1caecb22750d62dd5072a875ca7b4f92f",
+    "debian": {
+      "version": "bookworm"
+    },
+    "alpine": {
+      "version": "3.21"
+    }
   }
 }
