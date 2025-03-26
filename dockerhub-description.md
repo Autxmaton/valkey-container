@@ -19,7 +19,8 @@ Last updated: 2025-03-26
 - [`8.0.3-alpine`, `8.0-alpine`, `8-alpine`, `alpine`, `8.0.3-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.0/alpine/Dockerfile)
 
 ## Release candidates
-
+- [`8.1.0-rc1`, `8.1`, `8.1.0-rc1-bookworm`, `8.1-bookworm`](https://github.com/valkey-io/valkey-container/blob/master/8.1/debian/Dockerfile)
+- [`8.1.0-rc1-alpine`, `8.1-alpine`, `8.1.0-rc1-alpine3.21`, `8.1-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.1/alpine/Dockerfile)
 
 ## Latest unstable
 
