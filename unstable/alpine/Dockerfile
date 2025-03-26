@@ -22,8 +22,8 @@ RUN set -eux; \
 	;
 
 ENV VALKEY_VERSION unstable
-ENV VALKEY_DOWNLOAD_URL https://github.com/valkey-io/valkey/archive/unstable.tar.gz
-ENV VALKEY_DOWNLOAD_SHA 0000000000000000000000000000000000000000000000000000000000000000
+ENV VALKEY_DOWNLOAD_URL https://github.com/Autxmaton/valkey/archive/refs/tags/unstable.tar.gz
+ENV VALKEY_DOWNLOAD_SHA e13fd61dbeda89adba849167cdf05ea1caecb22750d62dd5072a875ca7b4f92f
 
 RUN set -eux; \
 	\
