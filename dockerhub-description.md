@@ -23,7 +23,8 @@ Last updated: 2025-03-26
 - [`8.1.0-rc1-alpine`, `8.1-alpine`, `8.1.0-rc1-alpine3.21`, `8.1-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.1/alpine/Dockerfile)
 
 ## Latest unstable
-
+- [`unstable`, `unstable-bookworm`](https://github.com/valkey-io/valkey-container/blob/master/unstable/debian/Dockerfile)
+- [`unstable-alpine`, `unstable-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/unstable/alpine/Dockerfile)
 
 What is [Valkey](https://github.com/valkey-io/valkey)?
 --------------
