@@ -1,8 +1,8 @@
 {
   "8.0": {
-    "version": "8.0.0",
-    "url": "https://github.com/Autxmaton/valkey/archive/refs/tags/8.0.0.tar.gz",
-    "sha256": "8d72d7301f2ecce5bb53a580702aeffce07370ee96ab7ff2174cfbac91608f9f",
+    "version": "8.0.3",
+    "url": "https://github.com/Autxmaton/valkey/archive/refs/tags/8.0.3.tar.gz",
+    "sha256": "ef69a0b124d63cc923c73ea8eda4773cba6a4dba8a57124416048e6cb32671de",
     "debian": {
       "version": "bookworm"
     },

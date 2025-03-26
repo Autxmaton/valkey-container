@@ -20,9 +20,9 @@ RUN set -eux; \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
-ENV VALKEY_VERSION 8.0.0
-ENV VALKEY_DOWNLOAD_URL https://github.com/Autxmaton/valkey/archive/refs/tags/8.0.0.tar.gz
-ENV VALKEY_DOWNLOAD_SHA 8d72d7301f2ecce5bb53a580702aeffce07370ee96ab7ff2174cfbac91608f9f
+ENV VALKEY_VERSION 8.0.3
+ENV VALKEY_DOWNLOAD_URL https://github.com/Autxmaton/valkey/archive/refs/tags/8.0.3.tar.gz
+ENV VALKEY_DOWNLOAD_SHA ef69a0b124d63cc923c73ea8eda4773cba6a4dba8a57124416048e6cb32671de
 
 RUN set -eux; \
 	\
@@ -101,7 +101,7 @@ RUN set -eux; \
 	valkey-cli --version; \
 	valkey-server --version; \
 	\
-	echo '{"spdxVersion":"SPDX-2.3","SPDXID":"SPDXRef-DOCUMENT","name":"valkey-server-sbom","packages":[{"name":"valkey-server","versionInfo":"8.0.0","SPDXID":"SPDXRef-Package--valkey-server","externalRefs":[{"referenceCategory":"PACKAGE-MANAGER","referenceType":"purl","referenceLocator":"pkg:generic/valkey-server@8.0.0?os_name=debian&os_version=bookworm"}],"licenseDeclared":"BSD-3-Clause"}]}' > /usr/local/valkey.spdx.json
+	echo '{"spdxVersion":"SPDX-2.3","SPDXID":"SPDXRef-DOCUMENT","name":"valkey-server-sbom","packages":[{"name":"valkey-server","versionInfo":"8.0.3","SPDXID":"SPDXRef-Package--valkey-server","externalRefs":[{"referenceCategory":"PACKAGE-MANAGER","referenceType":"purl","referenceLocator":"pkg:generic/valkey-server@8.0.3?os_name=debian&os_version=bookworm"}],"licenseDeclared":"BSD-3-Clause"}]}' > /usr/local/valkey.spdx.json
 
 RUN mkdir /data && chown valkey:valkey /data
 VOLUME /data
