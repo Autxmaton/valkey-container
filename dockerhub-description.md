@@ -1,4 +1,5 @@
 ## THIS FILE IS AUTO-GENERATED - DO NOT EDIT MANUALLY
+
 Last updated: 2025-03-26
 
 # Quick reference
@@ -12,8 +13,8 @@ Last updated: 2025-03-26
 # Supported tags and respective `Dockerfile` links
 
 ## Official releases
-- [`8.0.0`, `8.0`, `8`, `latest`, `8.0.0-bookworm`, `8.0-bookworm`, `8-bookworm`, `bookworm`](https://github.com/valkey-io/valkey-container/blob/master/8.0/debian/Dockerfile)
-- [`8.0.0-alpine`, `8.0-alpine`, `8-alpine`, `alpine`, `8.0.0-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.0/alpine/Dockerfile)
+- [`8.0.3`, `8.0`, `8`, `latest`, `8.0.3-bookworm`, `8.0-bookworm`, `8-bookworm`, `bookworm`](https://github.com/valkey-io/valkey-container/blob/master/8.0/debian/Dockerfile)
+- [`8.0.3-alpine`, `8.0-alpine`, `8-alpine`, `alpine`, `8.0.3-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.0/alpine/Dockerfile)
 
 ## Release candidates
 
