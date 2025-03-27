@@ -1,5 +1,6 @@
 ## THIS FILE IS AUTO-GENERATED - DO NOT EDIT MANUALLY
-Last updated: 2025-03-26
+
+Last updated: {update_date}
 
 # Quick reference
 
@@ -12,18 +13,13 @@ Last updated: 2025-03-26
 # Supported tags and respective `Dockerfile` links
 
 ## Official releases
-- [`9.0.0`, `9.0`, `9.0.0-bookworm`, `9.0-bookworm`](https://github.com/valkey-io/valkey-container/blob/master/9.0/debian/Dockerfile)
-- [`9.0.0-alpine`, `9.0-alpine`, `9.0.0-alpine3.21`, `9.0-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/9.0/alpine/Dockerfile)
-- [`8.0.3`, `8.0`, `8`, `latest`, `8.0.3-bookworm`, `8.0-bookworm`, `8-bookworm`, `bookworm`](https://github.com/valkey-io/valkey-container/blob/master/8.0/debian/Dockerfile)
-- [`8.0.3-alpine`, `8.0-alpine`, `8-alpine`, `alpine`, `8.0.3-alpine3.21`, `8.0-alpine3.21`, `8-alpine3.21`, `alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.0/alpine/Dockerfile)
+{official_releases}
 
 ## Release candidates
-- [`8.1.0-rc1`, `8.1`, `8.1.0-rc1-bookworm`, `8.1-bookworm`](https://github.com/valkey-io/valkey-container/blob/master/8.1/debian/Dockerfile)
-- [`8.1.0-rc1-alpine`, `8.1-alpine`, `8.1.0-rc1-alpine3.21`, `8.1-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/8.1/alpine/Dockerfile)
+{release_candidates}
 
 ## Latest unstable
-- [`unstable`, `unstable-bookworm`](https://github.com/valkey-io/valkey-container/blob/master/unstable/debian/Dockerfile)
-- [`unstable-alpine`, `unstable-alpine3.21`](https://github.com/valkey-io/valkey-container/blob/master/unstable/alpine/Dockerfile)
+{latest_unstable}
 
 What is [Valkey](https://github.com/valkey-io/valkey)?
 --------------
